@@ -12,7 +12,6 @@
     font-size: 3vw;
 }
 
-
 .text-shadow-pop-tl {
 	-webkit-animation: text-shadow-pop-tl 1s both;
 	        animation: text-shadow-pop-tl 1s both;
@@ -21,13 +20,6 @@
 .text-shadow-pop-tl-2 {
 	-webkit-animation: text-shadow-pop-tl-2 0.8s both;
             animation: text-shadow-pop-tl-2 0.8s both;
-}
-
-.wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 body {
@@ -98,6 +90,7 @@ body {
 
 /* ************************************************************************* */
 
+/* Scaled Mobile Keyframes */
 
 @-webkit-keyframes text-shadow-pop-tl-mob {
   0% {
@@ -163,7 +156,7 @@ body {
   .wrapper {
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center; 
     justify-content: center;
   }

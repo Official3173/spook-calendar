@@ -30,7 +30,6 @@ function getDayofOctober() {
     }
 }
 
-
 var octDay = String(getDayofOctober());
 var lastChar = octDay.split('').pop();
 var teenTest = octDay.charAt(0);
