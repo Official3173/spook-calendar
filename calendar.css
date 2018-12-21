@@ -12,6 +12,7 @@
     font-size: 3vw;
 }
 
+
 .text-shadow-pop-tl {
 	-webkit-animation: text-shadow-pop-tl 1s both;
 	        animation: text-shadow-pop-tl 1s both;
@@ -95,6 +96,69 @@ body {
 }
 
 
+/* ************************************************************************* */
+
+
+@-webkit-keyframes text-shadow-pop-tl-mob {
+  0% {
+        opacity: 0;
+    text-shadow: 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+      opacity: 1;
+    text-shadow: -1px -1px #003049, -2px -2px #003049, -3px -3px #003049, -4px -4px #003049;
+    -webkit-transform: translateX(4px) translateY(4px);
+            transform: translateX(4px) translateY(4px);
+  }
+}
+@keyframes text-shadow-pop-tl-mob {
+  0% {
+        opacity: 0;
+    text-shadow: 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+        opacity: 1;
+    text-shadow: -1px -1px #003049, -2px -2px #003049, -3px -3px #003049, -4px -4px #003049;
+    -webkit-transform: translateX(4px) translateY(4px);
+            transform: translateX(4px) translateY(4px);
+  }
+}
+
+
+@-webkit-keyframes text-shadow-pop-tl-2-mob {
+  0% {
+    text-shadow: 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px -1px #003049;
+    -webkit-transform: translateX(1px) translateY(1px);
+            transform: translateX(1px) translateY(1px);
+  }
+}
+@keyframes text-shadow-pop-tl-2-mob {
+  0% {
+    text-shadow: 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049, 0 0 #003049;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px -1px #003049;
+    -webkit-transform: translateX(1px) translateY(1px);
+            transform: translateX(1px) translateY(1px);
+  }
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
 @media only screen and (max-width: 1100px) {
   .wrapper {
     height: 100vh;
@@ -102,5 +166,15 @@ body {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
+  }
+
+  .text-shadow-pop-tl {
+    -webkit-animation: text-shadow-pop-tl-mob 1s both;
+            animation: text-shadow-pop-tl-mob 1s both;
+  }
+  
+  .text-shadow-pop-tl-2 {
+    -webkit-animation: text-shadow-pop-tl-2-mob 0.8s both;
+              animation: text-shadow-pop-tl-2-mob 0.8s both;
   }
 }
