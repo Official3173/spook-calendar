@@ -3,7 +3,7 @@
     text-align: center;
     font-size: 18vw;
     color: #FCBF49;
-    display: none;
+    visibility: hidden;
 }
 
 #spook-text {
