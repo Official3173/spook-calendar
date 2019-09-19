@@ -60,5 +60,7 @@ document.getElementById('spook-text').className = "text-shadow-pop-tl-2";
 document.getElementById('spookDate').className = "text-shadow-pop-tl";
 
 sleep(800).then(() => {
-    document.getElementById('spookDate').style.display = 'block';
+    let date = document.getElementById('spookDate');
+    date.style.visibility = 'visible';
+    date.style.display = 'block';
 })
