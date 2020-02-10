@@ -25,8 +25,6 @@ function getDayofOctober() {
     else if (day < 274){
         day = 365 + day;
         return day - 273;
-        // I have no idea why this needs to be 273 instead of 274, but it's one day off if left at 274.
-        // I think I'm just bad at math.
     }
 }
 
@@ -35,7 +33,7 @@ var lastChar = octDay.split('').pop();
 var teenTest = octDay.charAt(0);
 var supVal = '';
 
-if (teenTest == '1' && (octDay.length > 1)) {
+if (teenTest == '1' && (octDay.length > 1 && octDay <= 99)) {
     supVal = 'th';
 } else if (lastChar == '3'){
     supVal = 'rd';
@@ -53,7 +51,7 @@ document.getElementById('spookDate').innerHTML = 'October ' + String(octDay) + '
 // Here is the script that controls the animation, delaying the main date loading in.
 
 const sleep = (milliseconds) => {
-  return new Promise(resolve => setTimeout(resolve, milliseconds))
+  return new Promise(resolve => setTimeout(resolve(), milliseconds))
 }
 
 document.getElementById('spook-text').className = "text-shadow-pop-tl-2";
